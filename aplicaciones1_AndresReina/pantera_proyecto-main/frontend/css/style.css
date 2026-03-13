@@ -1,0 +1,141 @@
+header{
+    background-color: rgb(195, 83, 163);
+    height: 79px;
+}
+
+.imagen_logo{
+width: 120%;
+height: 60px;
+}
+
+/*barra y links*/ .navbar .nav-link {    color:     rgb(93, 12, 80);
+font-size: 16px;
+}       
+
+/* modificar el cambio de color de las opciones al pasar el cursor*/ .navbar .nav-link:hover { color: rgb(255, 255, 255);
+
+}   
+.navbar .nav-link:hover {
+    /* subrayar la letra al pasar el cursor*/ text-decoration: underline; color: rgb(255, 255, 255);
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.boton2{
+    color:  rgb(93, 12, 80);
+    text-decoration: none;
+    width: 20%;
+    background-color: rgb(212, 153, 199);
+    margin:auto;
+    margin-right: 20px;
+}
+
+.mitad{
+    margin-top: 20px;
+    background-color: rgb(216, 115, 244);
+}
+
+.imagen_princi{ width: 30%;
+    height: 400px;
+    margin-left: 60px;
+
+}
+
+.titulo{
+    background-color: blueviolet;
+    width: 100%;
+margin-top: 10px;
+
+}
+.letra{
+     width: 15%;
+    margin: auto;
+    }
+.mitad2{
+
+    background-color: blanchedalmond;
+    float: right;
+    margin-right: 30px;
+    width: 50%;
+    height: 400px;
+}
+
+.carrusel{
+    height: 50%;
+    height: 400px;
+}
+
+.botones{
+    margin-top: 10px;
+    background-color: brown;
+}
+
+.galeria{
+    background-color: rgb(173, 235, 245);
+}
+.boton { 
+    text-decoration: none;
+    width: 40%;
+    background-color: rgb(212, 153, 199);
+    margin:auto;
+}
+.buscar{
+    color: black;
+        text-decoration: none;
+        
+}
+.buscar:hover{
+    color: rgb(50, 14, 84);
+}
+.rojo{
+    width: 50%;
+    margin-left: 100px;
+}
+.pie{
+    height: 250px;
+    margin-top: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(196, 74, 143, 0.596);
+}
+.cuales{
+    margin-top: 90px;
+    
+}
+.final{
+    margin-right: 20px;
+    }
+.logo_final{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 65%;
+    height: 180px;
+}
+
+.imagenes{
+    box-sizing: border-box;
+    margin-left: 600px;
+    width: 25%;
+    height: 470px;
+
+}
+
+.productos{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+#carouselExample{
+    background-color: rgb(152, 242, 247);
+}
+
+.letra{
+    margin-top: 10px;
+    margin-left: 10px;
+}

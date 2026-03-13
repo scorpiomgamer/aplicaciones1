@@ -1,0 +1,100 @@
+header{
+    background-color: rgb(195, 83, 163);
+    height: 79px;
+}
+
+.imagen_logo{
+width: 120%;
+height: 60px;
+}
+
+/*barra y links*/ .navbar .nav-link {    color:     rgb(93, 12, 80);
+font-size: 16px;
+}       
+
+/* modificar el cambio de color de las opciones al pasar el cursor*/ .navbar .nav-link:hover { color: rgb(255, 255, 255);
+
+}   
+.navbar .nav-link:hover {
+    /* subrayar la letra al pasar el cursor*/ text-decoration: underline; color: rgb(255, 255, 255);
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.boton2{
+    color:  rgb(93, 12, 80);
+    text-decoration: none;
+    width: 20%;
+    background-color: rgb(212, 153, 199);
+    margin:auto;
+    margin-right: 20px;
+}
+
+.letra{
+    margin-left: 550px;
+}
+
+.carouselMultiItemExample{
+    margin-top: 4px;
+}
+
+.pie{
+    height: 250px;
+    margin-top: 5px;
+}
+
+footer{ 
+    height: 10px;
+    background-color: rgba(120, 82, 106, 0.543);
+}
+
+.boton{
+
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 203, 248);
+    margin-left: 130px;
+}
+
+/* Product card styles */
+.producto-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.producto-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.producto-card h3 {
+    color: rgb(93, 12, 80);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.producto-card p {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.producto-card .precio {
+    font-weight: bold;
+    color: rgb(195, 83, 163);
+    font-size: 1.1rem;
+}
+
+.producto-card .stock {
+    color: #28a745;
+}
+
+.producto-card img {
+    margin-top: 15px;
+    border-radius: 4px;
+}
