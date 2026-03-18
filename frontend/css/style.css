@@ -1,0 +1,182 @@
+/* Tonos originales (mismo vibe) pero con mejor jerarquía visual */
+:root{
+    --p1: rgb(195, 83, 163);
+    --p2: rgb(212, 153, 199);
+    --p3: rgb(93, 12, 80);
+    --bg1: rgb(152, 242, 247);
+    --bg2: rgb(173, 235, 245);
+    --shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+
+header{
+    background: linear-gradient(90deg, var(--p1), rgba(195, 83, 163, .85));
+    height: auto;
+    box-shadow: var(--shadow);
+}
+
+.imagen_logo{
+width: 140px;
+height: 60px;
+}
+
+/* barra y links */
+.navbar .nav-link {
+    color: var(--p3);
+    font-size: 16px;
+    font-weight: 600;
+}       
+
+/* hover más limpio */
+.navbar .nav-link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.boton2{
+    color: var(--p3);
+    text-decoration: none;
+    background-color: var(--p2);
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-left: 12px;
+    margin-right: 20px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.boton2:hover{ filter: brightness(1.03); }
+
+.mini-badge{
+    color: #fff;
+    font-weight: 600;
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.25);
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+.mitad{
+    margin-top: 20px;
+    background: linear-gradient(180deg, rgba(216, 115, 244, .35), rgba(216, 115, 244, .15));
+}
+
+.imagen_princi{ width: min(320px, 90%);
+    height: 400px;
+    margin-left: 0px;
+    object-fit: contain;
+
+}
+
+.titulo{
+    background-color: blueviolet;
+    width: 100%;
+margin-top: 10px;
+
+}
+.letra{
+     width: 15%;
+    margin: auto;
+    }
+.mitad2{
+    background-color: rgba(255, 235, 205, .9);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    width: min(640px, 100%);
+    min-height: 320px;
+}
+
+.carrusel{
+    height: 50%;
+    height: 400px;
+}
+
+.botones{
+    margin-top: 10px;
+    background-color: brown;
+}
+
+.galeria{
+    background-color: var(--bg2);
+}
+.card-soft{
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.boton { 
+    text-decoration: none;
+    background-color: var(--p2);
+    margin:auto;
+    border-radius: 999px;
+    padding: 10px 18px;
+    border: none;
+}
+.buscar{
+    color: black;
+        text-decoration: none;
+        
+}
+.buscar:hover{
+    color: rgb(50, 14, 84);
+}
+.rojo{
+    width: 50%;
+    margin-left: 100px;
+}
+.pie{
+    height: 250px;
+    margin-top: 10px;
+}
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(196, 74, 143, 0.65);
+}
+.cuales{
+    margin-top: 90px;
+    
+}
+.final{
+    margin-right: 20px;
+    }
+.logo_final{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 65%;
+    height: 180px;
+}
+
+.imagenes{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: min(520px, 92%);
+    height: 470px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+
+}
+
+.productos{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+}
+
+#carouselExample{
+    background-color: var(--bg1);
+    padding: 18px 0;
+}
+
+.letra{
+    margin-top: 10px;
+    margin-left: 10px;
+}

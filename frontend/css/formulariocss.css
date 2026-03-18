@@ -1,0 +1,69 @@
+header{
+    background: linear-gradient(90deg, rgb(195, 83, 163), rgba(195, 83, 163, .85));
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,.10);
+}
+
+.imagen_logo{
+width: 140px;
+height: 60px;
+}
+
+/*barra y links*/ .navbar .nav-link {    color:     rgb(93, 12, 80);
+font-size: 16px;
+}       
+
+/* modificar el cambio de color de las opciones al pasar el cursor*/ .navbar .nav-link:hover { color: rgb(255, 255, 255);
+
+}   
+.navbar .nav-link:hover {
+    /* subrayar la letra al pasar el cursor*/ text-decoration: underline; color: rgb(255, 255, 255);
+}
+
+.nav-item{
+    margin-left: 20px;
+}
+
+.boton2{
+    color:  rgb(93, 12, 80);
+    text-decoration: none;
+    background-color: rgb(212, 153, 199);
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-weight: 700;
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+.formulario{
+    background: linear-gradient(180deg, rgba(246, 164, 231, 0.72), rgba(246, 164, 231, 0.35));
+}
+
+.pie{
+    height: 250px;
+    margin-top: 10px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(196, 74, 143, 0.596);
+}
+.cuales{
+    margin-top: 90px;
+    
+}
+.final{
+    margin-right: 20px;
+    }
+.logo_final{
+    margin-top: 10px;
+    margin-left: 70px;
+    width: 65%;
+    height: 180px;
+}
+
+.formu{
+    width: 100%;
+    margin: auto;
+}
