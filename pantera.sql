@@ -1,5 +1,5 @@
--- Base de datos para Panthera
--- Sistema de gestión para tienda de accesorios
+﻿-- Base de datos para Panthera
+-- Sistema de gestiÃ³n para tienda de accesorios
 
 -- Crear la base de datos
 CREATE DATABASE IF NOT EXISTS pantera CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -22,7 +22,7 @@ CREATE TABLE usuarios (
     edad INT NOT NULL CHECK (edad >= 5 AND edad <= 100),
     direccion VARCHAR(255) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE,
-    contraseña VARCHAR(255) NOT NULL,
+    contraseÃ±a VARCHAR(255) NOT NULL,
     telefono VARCHAR(20) NOT NULL,
     id_tipo_documento INT NOT NULL,
     numero_documento VARCHAR(50) NOT NULL,
@@ -34,7 +34,7 @@ CREATE TABLE usuarios (
     INDEX idx_documento (numero_documento)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Tabla de categorías de productos
+-- Tabla de categorÃ­as de productos
 CREATE TABLE categorias (
     id_categoria INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL UNIQUE,
@@ -73,7 +73,7 @@ CREATE TABLE pedidos (
     FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
     INDEX idx_usuario (id_usuario),
     INDEX idx_estado (estado),
-    INDEX idx_fecha (fecha_pedido)q1
+    INDEX idx_fecha (fecha_pedido)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Tabla de detalle de pedidos
@@ -105,24 +105,24 @@ CREATE TABLE contactos (
 
 -- Insertar tipos de documento
 INSERT INTO tipos_documento (nombre, descripcion) VALUES
-('Cedula ciudadana', 'Cédula de ciudadanía colombiana'),
-('Cedula extrangera', 'Cédula de extranjería'),
+('Cedula ciudadana', 'CÃ©dula de ciudadanÃ­a colombiana'),
+('Cedula extrangera', 'CÃ©dula de extranjerÃ­a'),
 ('Targeta de identidad', 'Tarjeta de identidad para menores'),
 ('Pasaporte', 'Pasaporte internacional');
 
--- Insertar categorías de productos
+-- Insertar categorÃ­as de productos
 INSERT INTO categorias (nombre, descripcion) VALUES
-('Bolsos', 'Bolsos de diferentes estilos y tamaños'),
+('Bolsos', 'Bolsos de diferentes estilos y tamaÃ±os'),
 ('Tote Bags', 'Bolsas de mano tipo tote'),
 ('Accesorios', 'Accesorios diversos para dama'),
-('Protectores', 'Protectores para dispositivos electrónicos'),
-('Medias', 'Medias y calcetines con diseños únicos');
+('Protectores', 'Protectores para dispositivos electrÃ³nicos'),
+('Medias', 'Medias y calcetines con diseÃ±os Ãºnicos');
 
 -- Insertar productos de ejemplo
 INSERT INTO productos (nombre, descripcion, precio, id_categoria, stock, imagen_url) VALUES
-('Protector para audífonos inalámbricos', 'Protector para audífonos inalámbricos con temática de ositos cariñositos', 15000, 4, 50, '../assets/Disponible-09.jpg'),
+('Protector para audÃ­fonos inalÃ¡mbricos', 'Protector para audÃ­fonos inalÃ¡mbricos con temÃ¡tica de ositos cariÃ±ositos', 15000, 4, 50, '../assets/Disponible-09.jpg'),
 ('Bolso de malla', 'Bolso de mano en forma de malla para llevar con cualquier outfit', 35000, 1, 30, '../assets/Disponible-06.jpg'),
-('Par de medias ositos', 'Par de medias con temática de ositos cariñositos', 12000, 5, 100, '../assets/Disponible-08.jpg'),
+('Par de medias ositos', 'Par de medias con temÃ¡tica de ositos cariÃ±ositos', 12000, 5, 100, '../assets/Disponible-08.jpg'),
 ('Bolso Panthera Rosa', 'Bolso exclusivo Panthera en color rosa', 45000, 1, 25, '../assets/PANTHERA rosapng-07.png');
 
 -- Vista para resumen de pedidos
@@ -132,7 +132,7 @@ SELECT
     u.nombres,
     u.apellidos,
     u.email,
-    u.contraseña,
+    u.contraseÃ±a,
     p.fecha_pedido,
     p.estado,
     p.total,
@@ -140,7 +140,7 @@ SELECT
 FROM pedidos p
 JOIN usuarios u ON p.id_usuario = u.id_usuario
 LEFT JOIN detalle_pedidos dp ON p.id_pedido = dp.id_pedido
-GROUP BY p.id_pedido, u.nombres, u.apellidos, u.email, u.contraseña, p.fecha_pedido, p.estado, p.total;
+GROUP BY p.id_pedido, u.nombres, u.apellidos, u.email, u.contraseÃ±a, p.fecha_pedido, p.estado, p.total;
 
 -- Vista para inventario de productos
 CREATE VIEW vista_inventario AS
@@ -225,7 +225,7 @@ FOR EACH ROW
 BEGIN
     IF NEW.email NOT LIKE '%@%.%' THEN
         SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'Email inválido';
+        SET MESSAGE_TEXT = 'Email invÃ¡lido';
     END IF;
 END //
 
@@ -234,6 +234,6 @@ DELIMITER ;
 -- Comentarios sobre el uso de la base de datos
 -- Para usar esta base de datos:
 -- 1. Ejecutar este script en MySQL
--- 2. Conectar la aplicación web con las credenciales apropiadas
+-- 2. Conectar la aplicaciÃ³n web con las credenciales apropiadas
 -- 3. Usar los procedimientos almacenados para operaciones complejas
 -- 4. Las vistas proporcionan consultas optimizadas para reportes

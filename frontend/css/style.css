@@ -58,6 +58,23 @@ height: 60px;
     border: 1px solid rgba(255,255,255,.25);
     padding: 6px 10px;
     border-radius: 999px;
+    max-width: min(200px, 38vw);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.cart-nav-btn{
+    min-width: 2.35rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.cart-emoji{
+    font-size: 1.2rem;
+    line-height: 1;
+    display: inline-block;
 }
 
 .mitad{
